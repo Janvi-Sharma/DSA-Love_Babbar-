@@ -5,7 +5,7 @@ void printArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        cout << arr[i] << " 5";
+        cout << arr[i] << " ";
     }
 }
 bool linerSearch(int array[], int size, int target)
@@ -13,6 +13,7 @@ bool linerSearch(int array[], int size, int target)
     for (int i = 0; i < size; i++)
     {
         if (array[i] == target)
+
         {
             return true;
         }
@@ -23,6 +24,7 @@ int main()
 {
     int ar[100];
     int size;
+
     cout << "enter the size of array:" << endl;
     cin >> size;
 
@@ -30,7 +32,10 @@ int main()
     {
         cin >> ar[i];
     }
-    if (linerSearch(ar, size, 5))
+    int target;
+    cout << "enter the target value:" << endl;
+    cin >> target;
+    if (linerSearch(ar, size, target))
     {
         cout << "Element found" << endl;
     }
