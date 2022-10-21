@@ -30,7 +30,10 @@ int main()
     {
         cin >> ar[i];
     }
-    if (linerSearch(ar, size, 5))
+    int target;
+    cout << "enter the target value:" << endl;
+    cin >> target;
+    if (linerSearch(ar, size, target))
     {
         cout << "Element found" << endl;
     }
